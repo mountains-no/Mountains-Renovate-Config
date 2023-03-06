@@ -1,0 +1,22 @@
+{
+   "extends": [
+      "config:base"
+    ],
+    "labels": [
+      "renovate"
+    ],
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "patch", "digest"],
+      "matchPackagePatterns": [
+          "^com.fasterxml.jackson.dataformat:jackson*",  
+          "^com.fasterxml.jackson.datatype:jackson*",  
+          "^com.fasterxml.jackson.module:jackson",  
+          "^com.fasterxml.jackson.core:jackson-*",
+          "^com.amazonaws:aws-*"
+      ],
+      "automerge": true,
+      "ignoreTests": true
+    }
+  ]
+}
